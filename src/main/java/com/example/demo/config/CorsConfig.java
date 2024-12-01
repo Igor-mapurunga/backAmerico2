@@ -13,10 +13,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Permite todas as rotas
-                        .allowedOrigins("https://crudmvc.netlify.app", "http://localhost:3000") // Domínios permitidos
+                        .allowedOrigins("https://crudmvc.netlify.app", "http://localhost:5173") // URLs permitidas
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos permitidos
-                        .allowedHeaders("*") // Permite todos os headers
-                        .allowCredentials(true); // Permite cookies (se necessário)
+                        .allowedHeaders("*") // Todos os headers permitidos
+                        .allowCredentials(true); // Permite cookies/autenticação (se necessário)
             }
         };
     }
