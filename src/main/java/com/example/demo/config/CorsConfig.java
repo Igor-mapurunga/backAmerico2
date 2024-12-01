@@ -18,6 +18,7 @@ public class CorsConfig {
                         .allowedHeaders("*") // Permite todos os headers
                         .allowCredentials(true); // Permite cookies (se necessário)
             }
+
         };
     }
 }
